@@ -4,6 +4,10 @@
   margin: 10px;
   padding: 20px;
 }
+h1 {
+  color: red;
+  text-align: center;
+}
 
 .heading {
   padding: 10px;
@@ -36,4 +40,31 @@ ul li a {
 
 ul li a:hover {
   background-color: #111111;
+}
+
+.parent {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blogCard {
+  background-color: aquamarine;
+  width: 200px;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.blogimg {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+footer {
+  text-align: center;
 }
