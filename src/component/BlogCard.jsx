@@ -1,5 +1,5 @@
 import React from "react";
-
+import Button from "../component/Button";
 const BlogCard = (props) => {
   return (
     <>
@@ -7,6 +7,7 @@ const BlogCard = (props) => {
         <h4>{props.data.title}</h4>
         <img className="blogimg" src="https://dummyimage.com/svga" />
         <p>{props.data.body}</p>
+        <Button />
       </div>
     </>
   );
