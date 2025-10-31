@@ -7,7 +7,12 @@ const BlogCard = (props) => {
         <h4>{props.data.title}</h4>
         <img className="blogimg" src="https://dummyimage.com/svga" />
         <p>{props.data.body}</p>
-        <Button />
+        <Button content={props.data} btnName={"Read more"} isDownload={false} />
+        <Button
+          content={props.data}
+          btnName={"Download Content"}
+          isDownload={true}
+        />
       </div>
     </>
   );

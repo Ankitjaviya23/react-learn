@@ -3,6 +3,7 @@ import Header from "./component/Header";
 import Footer from "./component/Footer";
 import Card from "./component/Card";
 import BlogCard from "./component/BlogCard";
+import Counter from "./component/Counter";
 const App = () => {
   const Blogdata = [
     {
@@ -73,6 +74,7 @@ const App = () => {
       <Header />
 
       <Card />
+      <Counter />
       <div className="parent">
         {Blogdata.map(function (item, index) {
           return <BlogCard data={item} key={index} />;
