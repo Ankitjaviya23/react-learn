@@ -5,6 +5,7 @@ import Card from "./component/Card";
 import BlogCard from "./component/BlogCard";
 import Counter from "./component/Counter";
 import Todo from "./component/Todo";
+import Testimonial from "./component/Testimonial";
 const App = () => {
   const Blogdata = [
     {
@@ -77,6 +78,8 @@ const App = () => {
       <Card />
 
       <Todo />
+
+      <Testimonial />
       <Counter />
       <div className="parent">
         {Blogdata.map(function (item, index) {
