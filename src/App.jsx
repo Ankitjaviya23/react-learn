@@ -4,6 +4,7 @@ import Footer from "./component/Footer";
 import Card from "./component/Card";
 import BlogCard from "./component/BlogCard";
 import Counter from "./component/Counter";
+import Todo from "./component/Todo";
 const App = () => {
   const Blogdata = [
     {
@@ -74,6 +75,8 @@ const App = () => {
       <Header />
 
       <Card />
+
+      <Todo />
       <Counter />
       <div className="parent">
         {Blogdata.map(function (item, index) {

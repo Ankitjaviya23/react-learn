@@ -32,14 +32,14 @@ const Counter = () => {
         <div className="px-6 pt-4 pb-2">
           <button
             onClick={Increase}
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0 px-2 rounded text-center"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0 px-2 rounded text-center"
           >
             +
           </button>
 
           <button
             onClick={Decrease}
-            class="bg-red-500 hover:bg-red-700 text-white font-bold ml-2 py-0 px-2 rounded text-center"
+            className="bg-red-500 hover:bg-red-700 text-white font-bold ml-2 py-0 px-2 rounded text-center"
           >
             -
           </button>
