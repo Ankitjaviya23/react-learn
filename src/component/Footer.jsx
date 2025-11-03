@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <p>
-          Author: Lapcare@2025
+        <p className="m-5 bg-gray-400">
+          Author: FOOTER@2025
           <br />
         </p>
       </footer>

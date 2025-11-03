@@ -1,22 +1,48 @@
 import React from "react";
+import { Route, Routes, Link } from "react-router-dom";
+import Home from "../pages/Home";
+import Todo from "../component/Todo";
+import Product from "../component/Product";
+import Contact from "../pages/Contact";
+import About from "../pages/AboutUs";
+import Blog from "../component/Blog";
 
 const Header = () => {
   return (
     <>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <Link to={"/"}>Home</Link>
+        </li>
+
+        <li>
+          <Link to={"/todo"}>Todo</Link>
         </li>
         <li>
-          <a href="#news">News</a>
+          <Link to={"/product"}>Product</Link>
         </li>
+
         <li>
-          <a href="#contact">Contact</a>
+          <Link to={"/contact"}>Contact</Link>
         </li>
+
         <li>
-          <a href="#about">About</a>
+          <Link to={"/about"}>About Us</Link>
+        </li>
+
+        <li>
+          <Link to={"/blog"}>Blog</Link>
         </li>
       </ul>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
     </>
   );
 };
