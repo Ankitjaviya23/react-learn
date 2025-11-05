@@ -6,7 +6,8 @@ import Product from "../component/Product";
 import Contact from "../pages/Contact";
 import About from "../pages/AboutUs";
 import Blog from "../component/Blog";
-
+import NotFound from "../pages/NotFound";
+import BlogDetails from "./BlogDetails";
 const Header = () => {
   return (
     <>
@@ -42,6 +43,9 @@ const Header = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
+
+        <Route path="*" element={<NotFound />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
       </Routes>
     </>
   );
