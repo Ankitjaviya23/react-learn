@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
+import { ThemeData } from "../Context/ThemeContext";
 
 const BlogDetails = () => {
   let params = useParams();
@@ -7,6 +8,8 @@ const BlogDetails = () => {
   const [blogInfo, setBlog] = useState("");
   const [isload, setload] = useState(true);
   let navigate = useNavigate();
+
+  const themeDetails = useContext(ThemeData);
 
   useEffect(() => {
     getblogs();
@@ -35,6 +38,7 @@ const BlogDetails = () => {
     </h1>
   ) : (
     <div>
+      <h2>{themeDetails}</h2>
       <h1 className="text-center m-10  text-6xl border border-1 pb-5">
         {blogInfo?.title}
       </h1>
