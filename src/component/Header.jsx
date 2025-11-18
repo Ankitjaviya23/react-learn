@@ -8,6 +8,7 @@ import About from "../pages/AboutUs";
 import Blog from "../component/Blog";
 import NotFound from "../pages/NotFound";
 import BlogDetails from "./BlogDetails";
+import Post from "../pages/Post";
 const Header = () => {
   return (
     <>
@@ -34,6 +35,10 @@ const Header = () => {
         <li>
           <Link to={"/blog"}>Blog</Link>
         </li>
+
+        <li>
+          <Link to={"/post"}>Posts</Link>
+        </li>
       </ul>
 
       <Routes>
@@ -46,6 +51,7 @@ const Header = () => {
 
         <Route path="*" element={<NotFound />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/post" element={<Post />} />
       </Routes>
     </>
   );
