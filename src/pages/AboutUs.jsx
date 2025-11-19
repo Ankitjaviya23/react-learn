@@ -1,7 +1,13 @@
 import React from "react";
 
+import Memo from "../component/UseMemo/Memo";
 const AboutUs = () => {
-  return <div>AboutUs</div>;
+  return (
+    <>
+      <h1>AboutUs</h1>
+      <Memo />
+    </>
+  );
 };
 
 export default AboutUs;
