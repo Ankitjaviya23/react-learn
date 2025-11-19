@@ -28,7 +28,6 @@ const Memo = () => {
   return (
     <div className="container">
       <h1 className="text-4xl font-bold">Use Memo</h1>
-      <hr />
 
       <button onClick={incOne}> Counter - {countOne} </button>
 
@@ -40,6 +39,7 @@ const Memo = () => {
 
       <br />
       <button onClick={updateName}> Name: {name} </button>
+      <hr className="mr-5 p-5" />
     </div>
   );
 };
